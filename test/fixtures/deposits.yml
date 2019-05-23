@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ammount: 1.5
+  payer_name: MyString
+  status: MyString
+
+two:
+  ammount: 1.5
+  payer_name: MyString
+  status: MyString
