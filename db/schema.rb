@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20190508145556) do
+ActiveRecord::Schema.define(version: 20190524074927) do
 
   create_table "card_infos", force: :cascade do |t|
     t.string   "card_number"
@@ -27,6 +27,7 @@ ActiveRecord::Schema.define(version: 20190508145556) do
     t.integer  "office_number"
     t.datetime "created_at",    null: false
     t.datetime "updated_at",    null: false
+    t.string   "father_name"
   end
 
   create_table "deposits", force: :cascade do |t|
@@ -43,6 +44,16 @@ ActiveRecord::Schema.define(version: 20190508145556) do
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
     t.integer  "client_id"
+    t.boolean  "green_card"
   end
+
+  create_table "statuses", force: :cascade do |t|
+    t.text     "situation"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer  "client_id"
+  end
+
+  add_index "statuses", ["client_id"], name: "index_statuses_on_client_id"
 
 end
