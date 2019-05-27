@@ -1,3 +1,4 @@
 class Deposit < ActiveRecord::Base
-  belongs_to :client
+	validation :ammount, length: { maximum: 10 }
+	belongs_to :client
 end

@@ -5,7 +5,7 @@
 <table>
   <thead>
     <tr>
-      <th>Fist name</th>
+      <th>First name</th>
       <th>Second name</th>
       <th>Office number</th>
       <th colspan="3"></th>
@@ -15,7 +15,7 @@
   <tbody>
     <% @clients.each do |client| %>
       <tr>
-        <td><%= client.fist_name %></td>
+        <td><%= client.first_name %></td>
         <td><%= client.second_name %></td>
         <td><%= client.office_number %></td>
         <td><%= link_to 'Show', client %></td>
