@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :green_cards
   resources :statuses
   resources :clients
   resources :phones
