@@ -14,7 +14,7 @@
     <% @statuses.each do |status| %>
       <tr>
         <td><%= status.situation %></td>
-        <td><%= link_to 'Show', status %></td>
+	<td><%= link_to 'Show', status %></td>
         <td><%= link_to 'Edit', edit_status_path(status) %></td>
         <td><%= link_to 'Destroy', status, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
@@ -24,4 +24,5 @@
 
 <br>
 
+<%= link_to 'Clients', clients_path %>
 <%= link_to 'New Status', new_status_path %>

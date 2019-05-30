@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20190527124553) do
+ActiveRecord::Schema.define(version: 20190527145040) do
 
   create_table "card_infos", force: :cascade do |t|
     t.string   "card_number"
@@ -56,13 +56,7 @@ ActiveRecord::Schema.define(version: 20190527124553) do
     t.boolean  "green_card"
   end
 
-  create_table "statuses", force: :cascade do |t|
-    t.text     "situation"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.integer  "client_id"
-  end
-
-  add_index "statuses", ["client_id"], name: "index_statuses_on_client_id"
+# Could not dump table "statuses" because of following NoMethodError
+#   undefined method `[]' for nil:NilClass
 
 end
