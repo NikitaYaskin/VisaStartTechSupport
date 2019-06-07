@@ -19,7 +19,8 @@
         <td><%= green_card.first_name %></td>
         <td><%= green_card.second_name %></td>
         <td><%= green_card.father_name %></td>
-        <td><%= green_card.phone %></td>
+	<td><%= green_card.phone %></td>
+	<td><%= green_card.created_at %></td>
         <td><%= link_to 'Show', green_card %></td>
         <td><%= link_to 'Edit', edit_green_card_path(green_card) %></td>
         <td><%= link_to 'Destroy', green_card, method: :delete, data: { confirm: 'Are you sure?' } %></td>
