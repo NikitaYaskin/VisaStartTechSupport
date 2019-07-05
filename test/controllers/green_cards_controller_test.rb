@@ -18,7 +18,7 @@ class GreenCardsControllerTest < ActionController::TestCase
 
   test "should create green_card" do
     assert_difference('GreenCard.count') do
-      post :create, green_card: { father_name: @green_card.father_name, first_name: @green_card.first_name, phone: @green_card.phone, second_name: @green_card.second_name }
+      post :create, green_card: { added: @green_card.added, father_name: @green_card.father_name, first_name: @green_card.first_name, phone: @green_card.phone, second_name: @green_card.second_name }
     end
 
     assert_redirected_to green_card_path(assigns(:green_card))
@@ -35,7 +35,7 @@ class GreenCardsControllerTest < ActionController::TestCase
   end
 
   test "should update green_card" do
-    patch :update, id: @green_card, green_card: { father_name: @green_card.father_name, first_name: @green_card.first_name, phone: @green_card.phone, second_name: @green_card.second_name }
+    patch :update, id: @green_card, green_card: { added: @green_card.added, father_name: @green_card.father_name, first_name: @green_card.first_name, phone: @green_card.phone, second_name: @green_card.second_name }
     assert_redirected_to green_card_path(assigns(:green_card))
   end
 

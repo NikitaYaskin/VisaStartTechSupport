@@ -1,24 +1,27 @@
+<div class="container">
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>First name:</strong>
-  <%= @green_card.first_name %>
+<strong>First name:</strong>
+<%= @green_card.first_name %>
 </p>
-
 <p>
-  <strong>Second name:</strong>
-  <%= @green_card.second_name %>
+<strong>Second name:</strong>
+<%= @green_card.second_name %>
 </p>
-
 <p>
-  <strong>Father name:</strong>
-  <%= @green_card.father_name %>
+<strong>Father name:</strong>
+<%= @green_card.father_name %>
 </p>
-
 <p>
-  <strong>Phone:</strong>
-  <%= @green_card.phone %>
+<strong>Phone:</strong>
+<%= @green_card.phone %>
+</p>
+<p>
+  <strong>Added:</strong>
+  <%= @green_card.added %>
 </p>
 
 <%= link_to 'Edit', edit_green_card_path(@green_card) %> |
-<%= link_to 'Back', green_cards_path %>
+<%= link_to 'Show all', green_cards_path %>
+</div>

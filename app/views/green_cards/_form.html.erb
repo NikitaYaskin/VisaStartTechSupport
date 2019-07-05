@@ -10,11 +10,12 @@
       </ul>
     </div>
   <% end %>
-
+<div class="form-group">
   <div class="field">
     <%= f.label :first_name %><br>
     <%= f.text_field :first_name %>
   </div>
+</div>
   <div class="field">
     <%= f.label :second_name %><br>
     <%= f.text_field :second_name %>
@@ -26,6 +27,10 @@
   <div class="field">
     <%= f.label :phone %><br>
     <%= f.text_field :phone %>
+  </div>
+  <div class="field">
+    <%= f.label :added %><br>
+    <%= f.date_select :added %>
   </div>
   <div class="actions">
     <%= f.submit %>

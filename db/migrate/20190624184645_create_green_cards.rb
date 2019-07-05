@@ -5,6 +5,7 @@ class CreateGreenCards < ActiveRecord::Migration
       t.string :second_name
       t.string :father_name
       t.string :phone
+      t.date :added
 
       t.timestamps null: false
     end

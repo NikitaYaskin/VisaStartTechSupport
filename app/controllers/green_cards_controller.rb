@@ -69,6 +69,6 @@ class GreenCardsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def green_card_params
-      params.require(:green_card).permit(:first_name, :second_name, :father_name, :phone)
+      params.require(:green_card).permit(:first_name, :second_name, :father_name, :phone, :added)
     end
 end

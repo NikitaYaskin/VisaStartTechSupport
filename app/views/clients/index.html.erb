@@ -7,7 +7,9 @@
     <tr>
       <th>Ім'я</th>
       <th>Прізвище</th>
+      <th>По батькові</th>
       <th>З якого офісу</th>
+      <th>Назва вакансії</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -16,8 +18,10 @@
     <% @clients.each do |client| %>
       <tr>
         <td><%= client.first_name %></td>
-        <td><%= client.second_name %></td>
-        <td><%= client.office_number %></td>
+	<td><%= client.second_name %></td>
+	<td><%= client.father_name %></td>
+	<td><%= client.office_number %></td>
+	<td><%= client.job_title %></td>
         <td><%= link_to 'Показати', client %></td>
         <td><%= link_to 'Змінити', edit_client_path(client) %></td>
         <td><%= link_to 'Видалити', client, method: :delete, data: { confirm: 'Ви впевнені?' } %></td>
