@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   resources :green_cards
   resources :green_cards
   resources :statuses

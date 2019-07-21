@@ -1,16 +1,18 @@
+<div class="container">
 <p id="notice"><%= notice %></p>
 
 <h1>Перелік клієнтів</h1>
+<br>
 
-<table>
-  <thead>
+<table class="table">
+  <thead class="thead-dark">
     <tr>
-      <th>Ім'я</th>
-      <th>Прізвище</th>
-      <th>По батькові</th>
-      <th>З якого офісу</th>
-      <th>Назва вакансії</th>
-      <th colspan="3"></th>
+      <th scope="col">Ім'я</th>
+      <th scope="col">Прізвище</th>
+      <th scope="col">По батькові</th>
+      <th scope="col">З якого офісу</th>
+      <th scope="col">Назва вакансії</th>
+      <th scope="col" colspan="3"></th>
     </tr>
   </thead>
 
@@ -30,6 +32,8 @@
   </tbody>
 </table>
 
+
 <br>
 
 <%= link_to 'Новий клієнт', new_client_path %>
+</div>
