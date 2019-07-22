@@ -7,8 +7,29 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+	<div class="container">
+		<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand" href="/">Visa Start Logo</a>
+  
+	  <a class="btn btn-light" href="/clients">Clients</a>
+	  <a class="btn btn-light" href="/green_cards">Green Cards</a>
+	  <a class="btn btn-light" href="/phones">Phones</a>
+	  <a class="btn btn-light" href="/statuses">Tasks</a>
+	  <form class="form-inline pull-right">
+    <a class="btn btn-outline-primary" href="/users/sign_in" role="button">
+    Login
+    </a>
+      <a class="btn btn-outline-success" href="/users/sign_up" role="button">
+      Sign Up
+      </a>
+  </form>
+		</nav>
+	</div>
+  <div class="container">
+    <%= yield %>
+    </div>
+  
 
-<%= yield %>
 
 </body>
 </html>
