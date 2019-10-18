@@ -25,7 +25,7 @@ gem 'sdoc', '>= 0.4.0', group: :doc
 
 gem 'bootstrap-sass'
 
-gem 'devise'
+gem 'devise', '>= 4.7.1'
 gem 'cancancan'
 gem 'rolify'
 
